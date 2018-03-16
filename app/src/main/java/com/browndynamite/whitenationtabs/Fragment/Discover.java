@@ -14,6 +14,6 @@ import com.browndynamite.whitenationtabs.R;
 
 public class Discover extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
-        return inflater.inflate(R.layout.streak_layout, null);
+        return inflater.inflate(R.layout.discover_layout, null);
     }
 }
