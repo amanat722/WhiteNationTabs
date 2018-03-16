@@ -48,7 +48,8 @@ public class customForHypesArray extends BaseAdapter {
         View custom_view =inflater.inflate(R.layout.grid_item_layout,null);
         ImageView imgHype= custom_view.findViewById(R.id.imgHypex);
         TextView txtHype = custom_view.findViewById(R.id.txtHypex);
-        imgHype.setImageResource(arrayList.get(pos).getImageID());
+        //TODO: decrease the size of your images.
+//        imgHype.setImageResource(arrayList.get(pos).getImageID());
         txtHype.setText(arrayList.get(pos).getName());
 
 

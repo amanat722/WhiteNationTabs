@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.GridView;
 
 import com.browndynamite.whitenationtabs.Fragment.Discover;
@@ -23,18 +24,12 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     TabLayout tabLayout;
     Toolbar toolbar;
-    GridView gridView;
-    ArrayList<Hypes> hypes;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        gridView=findViewById(R.id.gridView);
-        hypes= new ArrayList<>();
-        setHype();
-        customForHypesArray adapterx= new customForHypesArray(MainActivity.this, hypes) ;
-        gridView.setAdapter(adapterx);
 
         viewPager=findViewById(R.id.ViewPager);
         tabLayout=findViewById(R.id.tabLayout);
@@ -43,22 +38,6 @@ public class MainActivity extends AppCompatActivity {
         setDatatoViewPager();
         tabLayout.setupWithViewPager(viewPager);
         setTabIcons();
-
-    }
-
-    private void  setHype()
-    {
-        Hypes food =new Hypes(R.drawable.food ,"food");
-        Hypes travel =new Hypes(R.drawable.travel ,"travel");
-        Hypes movies =new Hypes(R.drawable.movies ,"movies");
-        Hypes gadgets =new Hypes(R.drawable.gadgets ,"gadgets");
-        Hypes music =new Hypes(R.drawable.music ,"music");
-
-        hypes.add(food);
-        hypes.add(travel);
-        hypes.add(movies);
-        hypes.add(gadgets);
-        hypes.add(music);
 
     }
 
