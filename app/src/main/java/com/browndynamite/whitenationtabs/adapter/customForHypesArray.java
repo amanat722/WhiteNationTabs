@@ -49,7 +49,7 @@ public class customForHypesArray extends BaseAdapter {
         ImageView imgHype= custom_view.findViewById(R.id.imgHypex);
         TextView txtHype = custom_view.findViewById(R.id.txtHypex);
         //TODO: decrease the size of your images.
-//        imgHype.setImageResource(arrayList.get(pos).getImageID());
+      imgHype.setImageResource(arrayList.get(pos).getImageID());
         txtHype.setText(arrayList.get(pos).getName());
 
 

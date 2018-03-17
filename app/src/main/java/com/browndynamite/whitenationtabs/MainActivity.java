@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager=findViewById(R.id.ViewPager);
         tabLayout=findViewById(R.id.tabLayout);
-        toolbar=findViewById(R.id.toolBar);
-        setSupportActionBar(toolbar);
+       // toolbar=findViewById(R.id.toolBar);
+        //setSupportActionBar(toolbar);
         setDatatoViewPager();
         tabLayout.setupWithViewPager(viewPager);
         setTabIcons();
