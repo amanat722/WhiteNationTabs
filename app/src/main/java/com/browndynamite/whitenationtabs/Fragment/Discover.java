@@ -1,10 +1,12 @@
 package com.browndynamite.whitenationtabs.Fragment;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.browndynamite.whitenationtabs.R;
@@ -29,6 +31,46 @@ public class Discover extends Fragment {
         setHype();
         customForHypesArray adapterx= new customForHypesArray(getContext(), hypes) ;
         gridView.setAdapter(adapterx);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent;
+                String easyPuzzle="";
+                intent = new Intent(getActivity(), mFragmentFavorite.class);
+
+                if(i==0)
+                {
+                    easyPuzzle="food";
+                    intent.putExtra("epuzzle", easyPuzzle);
+                }
+                if(i==1)
+                {
+                    easyPuzzle="travel";
+                    intent.putExtra("epuzzle", easyPuzzle);
+                }
+                if(i==2)
+                {
+                    easyPuzzle="movie";
+                    intent.putExtra("epuzzle", easyPuzzle);
+                }
+                if(i==3)
+                {
+                    easyPuzzle="gadget";
+                    intent.putExtra("epuzzle", easyPuzzle);
+                }
+                if(i==4)
+                {
+                    easyPuzzle="music";
+                    intent.putExtra("epuzzle", easyPuzzle);
+                }
+                startActivity(intent);
+
+
+
+
+            }
+        });
         return view;
     }
 

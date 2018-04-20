@@ -7,17 +7,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.widget.GridView;
 
 import com.browndynamite.whitenationtabs.Fragment.Discover;
-import com.browndynamite.whitenationtabs.Fragment.Story;
-import com.browndynamite.whitenationtabs.Fragment.Streaks;
-import com.browndynamite.whitenationtabs.adapter.Hypes;
+import com.browndynamite.whitenationtabs.Fragment.Friends;
+import com.browndynamite.whitenationtabs.Fragment.HypeLevel;
 import com.browndynamite.whitenationtabs.adapter.ViewPagerAdapter;
-import com.browndynamite.whitenationtabs.adapter.customForHypesArray;
-
-import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -75,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
     private void setDatatoViewPager() {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Discover(),"Hype");
-        adapter.addFragment(new Story(),"Friends");
-        adapter.addFragment(new Streaks(),"Streak");
+        adapter.addFragment(new Friends(),"Friends");
+        adapter.addFragment(new HypeLevel(),"Streak");
         viewPager.setAdapter(adapter);
     }
 }

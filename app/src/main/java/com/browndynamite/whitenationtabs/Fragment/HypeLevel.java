@@ -12,9 +12,11 @@ import com.browndynamite.whitenationtabs.R;
  * Created by ASUS on 1/23/2018.
  */
 
-public class Streaks extends Fragment {
+public class HypeLevel extends Fragment {
     public View onCreateView(LayoutInflater inflator, ViewGroup group, Bundle bundle){
-    return inflator.inflate(R.layout.discover_layout,null);
+    return inflator.inflate(R.layout.hypelevel_layout,null);
+
+
 
     }
 }
