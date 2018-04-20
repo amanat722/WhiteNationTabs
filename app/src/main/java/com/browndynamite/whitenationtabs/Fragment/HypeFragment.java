@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Created by ASUS on 1/23/2018.
  */
 
-public class Discover extends Fragment {
+public class HypeFragment extends Fragment {
     GridView gridView;
     ArrayList<Hypes> hypes;
 
@@ -37,7 +37,7 @@ public class Discover extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent;
                 String easyPuzzle="";
-                intent = new Intent(getActivity(), mFragmentFavorite.class);
+                intent = new Intent(getActivity(), onHypeClick.class);
 
                 if(i==0)
                 {

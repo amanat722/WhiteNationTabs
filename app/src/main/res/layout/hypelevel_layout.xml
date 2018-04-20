@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:hapticFeedbackEnabled="true"
     android:clickable="true"
-    android:soundEffectsEnabled="true">
+    android:orientation="vertical"
+    android:soundEffectsEnabled="true"
+    android:padding="20dp">
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:wlv_borderColor="@color/colorAccent"
+        app:wlv_borderWidth="3dp"
+        app:wlv_shapeType="circle"
+        app:wlv_round_rectangle="true"
+        app:wlv_triangle_direction="north"
 
 
-</RelativeLayout>
+        app:wlv_titleCenterStrokeColor="#124df1"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="24sp"
+
+
+        app:wlv_titleBottomStrokeColor="#124df1"
+        app:wlv_titleBottomStrokeWidth="3dp"
+        app:wlv_titleBottomColor="@android:color/white"
+        app:wlv_titleBottomSize="24sp"
+
+
+        app:wlv_titleTopStrokeColor="#124df1"
+        app:wlv_titleTopStrokeWidth="3dp"
+        app:wlv_titleTopColor="@android:color/white"
+        app:wlv_titleTopSize="24sp"
+
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="@color/colorAccent"
+        />
+
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+        android:max="100"
+
+
+        />
+
+
+</LinearLayout>

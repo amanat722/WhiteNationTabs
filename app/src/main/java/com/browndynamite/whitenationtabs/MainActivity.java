@@ -8,8 +8,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.browndynamite.whitenationtabs.Fragment.Discover;
-import com.browndynamite.whitenationtabs.Fragment.Friends;
+import com.browndynamite.whitenationtabs.Fragment.HypeFragment;
+import com.browndynamite.whitenationtabs.Fragment.Notification;
 import com.browndynamite.whitenationtabs.Fragment.HypeLevel;
 import com.browndynamite.whitenationtabs.adapter.ViewPagerAdapter;
 
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     TabLayout tabLayout;
     Toolbar toolbar;
+
 
 
     @Override
@@ -68,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setDatatoViewPager() {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Discover(),"Hype");
-        adapter.addFragment(new Friends(),"Friends");
-        adapter.addFragment(new HypeLevel(),"Streak");
+        adapter.addFragment(new HypeFragment(),"Hype");
+        adapter.addFragment(new Notification(),"Notification");
+        adapter.addFragment(new HypeLevel(),"Level");
         viewPager.setAdapter(adapter);
     }
 }

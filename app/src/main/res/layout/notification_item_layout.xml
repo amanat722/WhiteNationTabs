@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="105dp">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:id="@+id/imgNotification"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/fuad"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="text"
+        android:layout_toRightOf="@id/imgNotification"
+        android:textSize="15dp"
+        android:id="@+id/notificationText"
+
+
+        />
+    
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/imgNotification"
+        android:layout_marginBottom="2dp"
+        />
+
+
+
+
+
+</RelativeLayout>

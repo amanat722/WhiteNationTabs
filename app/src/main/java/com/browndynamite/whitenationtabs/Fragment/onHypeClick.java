@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.browndynamite.whitenationtabs.R;
 
-public class mFragmentFavorite extends AppCompatActivity {
+public class onHypeClick extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
